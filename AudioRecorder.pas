@@ -421,7 +421,9 @@ begin
 
   Result_Code := waveInOpen(@FWaveIn, DevID, @FWaveFormat,
                             DWORD_PTR(@WaveInProc), DWORD_PTR(Self), CALLBACK_FUNCTION);
-  if Result_Code <> MMSYSERR_NOERROR then Exit;
+
+  if Result_Code <> MMSYSERR_NOERROR then
+    Exit;
 
   try
     PrepareBuffers;
