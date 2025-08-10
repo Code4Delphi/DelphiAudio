@@ -1,7 +1,7 @@
 {********************************************************************}
 {                                                                    }
 { written by TMS Software                                            }
-{            copyright (c) 2024 - 2025                               }
+{            copyright (c) 2025                                      }
 {            Email : info@tmssoftware.com                            }
 {            Web : http://www.tmssoftware.com                        }
 {                                                                    }
@@ -351,19 +351,28 @@ begin
   mciSendString('play MP3File', nil, 0, 0);
 end;
 
-function GetTempDir: string;
+function GetTempMP3FileName: string;
 var
-  Buffer: array[0..MAX_PATH] of Char;
+  TempPath: array[0..MAX_PATH] of Char;
+  TempFile: array[0..MAX_PATH] of Char;
 begin
-  GetTempPath(MAX_PATH, Buffer);
-  Result := StrPas(Buffer);
+  // Get the temp directory
+  if GetTempPath(MAX_PATH, TempPath) = 0 then
+    RaiseLastOSError;
+
+  // Create a unique temp file (with .tmp extension by default)
+  if GetTempFileName(TempPath, 'MP3', 0, TempFile) = 0 then
+    RaiseLastOSError;
+
+  // Change extension to .mp3
+  Result := ChangeFileExt(string(TempFile), '.mp3');
 end;
 
 procedure TAudioRecorder.PlayMP3FromStream(Stream: TMemoryStream);
 var
   TempFileName: string;
 begin
-  TempFileName := IncludeTrailingPathDelimiter(GetTempDir) + 'temp_playback.mp3';
+  TempFileName := GetTempMP3FileName;
 
   Stream.Position := 0;
   Stream.SaveToFile(TempFileName);
