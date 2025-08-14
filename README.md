@@ -1,4 +1,5 @@
-![Static Badge](https://img.shields.io/badge/English-(en)-red)
+[![Static Badge](https://img.shields.io/badge/English-(en)-red)](https://github.com/Code4Delphi/DelphiAudio?tab=readme-ov-file#%EF%B8%8Faudio-recording-and-playback-with-delphi)
+[![Static Badge](https://img.shields.io/badge/Portugu%C3%AAs-(ptBR)-green)](https://github.com/Code4Delphi/DelphiAudio?tab=readme-ov-file#%EF%B8%8Fgrava%C3%A7%C3%A3o-e-reprodu%C3%A7%C3%A3o-de-%C3%A1udio-com-delphi)
 # 🎙️Audio Recording and Playback with Delphi
 
 This project is a fork of a repository containing examples of using the [DelphiAudio Library](https://github.com/tmssoftware/DelphiAudio).
@@ -20,7 +21,7 @@ DelphiAudio is a Delphi code library that offers:
 
 <br/>
 
-![Static Badge](https://img.shields.io/badge/Portugu%C3%AAs-(ptBR)-green)
+[![Static Badge](https://img.shields.io/badge/Portugu%C3%AAs-(ptBR)-green)](https://github.com/Code4Delphi/DelphiAudio?tab=readme-ov-file#%EF%B8%8Fgrava%C3%A7%C3%A3o-e-reprodu%C3%A7%C3%A3o-de-%C3%A1udio-com-delphi)
 # 🎙️Gravação e Reprodução de Áudio com Delphi
 
 Este projeto é um **fork** de um repositório contendo exemplos de uso da [**Biblioteca DelphiAudio**](https://github.com/tmssoftware/DelphiAudio).  
