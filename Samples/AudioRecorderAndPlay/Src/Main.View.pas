@@ -70,6 +70,9 @@ begin
   btnStartRecording.Enabled := False;
   btnStopRecording.Enabled := True;
   btnPlayRecording.Enabled := False;
+  btnSaveRecording.Enabled := False;
+  btnPlayAudioMP3.Enabled := False;
+  btnListDevices.Enabled := False;
 end;
 
 procedure TMainView.ScreenRecordingOff;
@@ -77,6 +80,9 @@ begin
   btnStartRecording.Enabled := True;
   btnStopRecording.Enabled := False;
   btnPlayRecording.Enabled := True;
+  btnSaveRecording.Enabled := True;
+  btnPlayAudioMP3.Enabled := True;
+  btnListDevices.Enabled := True;
 end;
 
 procedure TMainView.btnListDevicesClick(Sender: TObject);

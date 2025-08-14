@@ -133,6 +133,7 @@ object MainView: TMainView
     Padding.Left = 5
     Padding.Bottom = 2
     TabOrder = 2
+    ExplicitTop = 88
     object btnPlayAudioMP3: TButton
       AlignWithMargins = True
       Left = 10
@@ -147,6 +148,8 @@ object MainView: TMainView
       Caption = 'Play audio MP3'
       TabOrder = 0
       OnClick = btnPlayAudioMP3Click
+      ExplicitLeft = 8
+      ExplicitTop = 19
     end
   end
   object SaveDialog1: TSaveDialog
