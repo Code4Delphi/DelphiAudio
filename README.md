@@ -12,11 +12,15 @@ DelphiAudio is a Delphi code library that offers:
 - 🎵 Playback of MP3 files
 - 📦 Lightweight and easy-to-integrate structure
 
-
 ## 🚀 Quickstart
 
-1. Add the AudioRecorder.pas unit to your Delphi project. 2. Copy the necessary DLLs (lame_enc.dll and libmp3lame.dll) to the same folder as the executable.
+1. Add the AudioRecorder.pas unit to your Delphi project.
+2. Copy the necessary DLLs (lame_enc.dll and libmp3lame.dll) to the same folder as the executable.
 3. Compile and run your project.
+
+## ▶️ Demo Video
+- [Full video demonstration of configuring and using the DelphiAudio library](https://www.youtube.com/watch?v=zQzsw8hKdW4)
+  
 ---
 
 <br/>
@@ -34,9 +38,12 @@ A **DelphiAudio** é uma biblioteca de código Delphi que oferece:
 - 🎵 **Reprodução** de arquivos MP3
 - 📦 Estrutura leve e de fácil integração
 
-
 ## 🚀 Quickstart
 
 1. Adicione a unit **`AudioRecorder.pas`** ao seu projeto Delphi.
 2. Copie as DLLs necessárias (**`lame_enc.dll`** e **`libmp3lame.dll`**) para a **mesma pasta do executável**.
 3. Compile e execute seu projeto.
+
+## ▶️ Vídeo de demonstração
+- [Vídeo completo de demonstração de configuração e uso da biblioteca DelphiAudio](https://www.youtube.com/watch?v=zQzsw8hKdW4)
+
